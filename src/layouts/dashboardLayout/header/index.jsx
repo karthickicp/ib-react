@@ -1,4 +1,6 @@
 import styles from "./header.module.css";
+import profilePic from "/src/assets/img/profile.jpg";
+
 const Header = () => {
   return (
     <div className={styles.header}>
@@ -8,7 +10,7 @@ const Header = () => {
       <div>
         <div className={styles.profileSec}>
           <i className="bi bi-search searchIcon"></i>
-          <img src="src/assets/img/profile.jpg" alt="" />
+          <img src={profilePic} alt="" />
           <span>X-Solutions</span>
           <i className="bi bi-chevron-down"></i>
         </div>

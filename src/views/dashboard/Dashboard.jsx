@@ -3,6 +3,7 @@ import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
+import profilePic from "/src/assets/img/profile.jpg";
 const Dashboard = () => {
   const products = [
     { title: "Aurora", updatedDate: "21 Aug 19" },
@@ -56,7 +57,7 @@ const Dashboard = () => {
       <div className={styles.productWrapper}>
         {products.map((product) => (
           <Card key={product.title}>
-            <img src="src/assets/img/profile.jpg" alt="product profile pic" />
+            <img src={profilePic} alt="product profile pic" />
             <h4>{product.title}</h4>
             <p>updated {product.updatedDate}</p>
             <button>Explore</button>
