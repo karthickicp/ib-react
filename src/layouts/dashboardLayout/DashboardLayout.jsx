@@ -1,7 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Header from "./header";
 import { Outlet } from "react-router-dom";
-import styles from "./DashboardLayout.module.css";
+import styles from "./dashboardLayout.module.css";
 const DashboardLayout = () => {
   return (
     <div>
