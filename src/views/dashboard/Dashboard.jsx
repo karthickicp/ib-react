@@ -56,7 +56,10 @@ const Dashboard = () => {
       <div className={styles.productWrapper}>
         {products.map((product) => (
           <Card key={product.title}>
-            <img src="src\assets\img\profile.jpg" alt="product profile pic" />
+            <img
+              src="../../src/assets/img/profile.jpg"
+              alt="product profile pic"
+            />
             <h4>{product.title}</h4>
             <p>updated {product.updatedDate}</p>
             <button>Explore</button>
