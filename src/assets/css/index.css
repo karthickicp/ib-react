@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* overriding styles */
+.form .form-control{padding: .75rem;}
+.form-select{padding: .75rem !important;}
+
+/* button styles */
+.Btn{padding: .75rem 1rem; border-radius: .25rem; border: 1px solid; font-size: 1rem; font-weight: 500;}
+.Btn-primary{background: #4c84ff; color: #fff;}

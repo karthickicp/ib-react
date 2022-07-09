@@ -1,0 +1,18 @@
+.loginWrapper{ width: 100%; float: left; background: url("/src/assets/img/login-bg.png") no-repeat center right; background-size: 50%;}
+/* :local(.loginWrapper)  :global .container .row{height: 100vh;} */
+/* :local(.leftSection) :global(.form){padding: 1.5rem; background: #fff; border-radius: .25rem;} */
+.loginWrapper h1{font-size: 2rem; font-weight: 600; max-width: 300px;text-align: left; color: #2f3950;margin: 8% 0;}
+.loginWrapper h4{font-size: 1.25rem; font-weight: 500; color: #4c84ff; margin-bottom: 1rem;}
+.leftSection{display: flex; align-items: flex-start; justify-content: center;  flex-direction: column;padding: 3rem 0; height: 100vh;}
+.signUp{font-size: 1rem; cursor: pointer;margin-top: 15%;}
+.signUp span{color:  #4c84ff; display: inline-block; cursor: pointer;}
+.forgotPwd{float: right; color: #4c84ff;}
+
+@media (max-width: 767px) {
+    .loginWrapper{background: none;}
+    .leftSection{justify-content: space-evenly;}
+}
+
+/* @media (max-width: 991px) {
+    .loginWrapper{background-size: 40%;}
+} */

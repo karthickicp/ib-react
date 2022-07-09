@@ -1,0 +1,4 @@
+.bodyWrapper{width: 100%; float: left;background: #f4f7fc;margin-top: 77px;min-height: calc(100vh - 77px);padding: 1.5rem;}
+@media (max-width: 767px) {
+    .bodyWrapper{padding: 1rem 0.5rem;}
+}
