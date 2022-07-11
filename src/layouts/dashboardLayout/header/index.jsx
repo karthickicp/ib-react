@@ -1,5 +1,4 @@
 import ProfileSection from "../../../components/ProfileSection";
-import styles from "./header.module.css";
 
 const Header = () => {
   return (
