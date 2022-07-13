@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 /* overriding styles */
 .form .form-control{padding: .75rem;}
-.form-select{padding: .75rem !important;}
-
+.form-select{padding: .75rem;}
+.breadcrumb-item a{text-decoration: none;color: #000; text-transform: uppercase; font-size: 14px;}
+.breadcrumb-item + .breadcrumb-item::before{content: ''; padding: 0}
+.breadcrumb-item::after{content: '>'; padding-left: .5rem;}
+.breadcrumb-item.active{background: #ee755e; color: #fff; border-radius: .25rem;margin-left: .5rem;font-weight: 400; text-transform: uppercase;}
+.breadcrumb-item.active::after{content: "";}
+.table > :not(:first-child){border-top: none;}
 /* button styles */
 .Btn{padding: .75rem 1rem; border-radius: .25rem; border: 1px solid; font-size: 1rem; font-weight: 500;}
 .Btn-primary{background: #4c84ff; color: #fff;}
@@ -17,3 +22,10 @@ body {
 /* header */
 .header{background: #fff; padding: 1rem 1.5rem; display: flex; justify-content: space-between;align-items: center;position: fixed; top: 0; width: 100%; float: left;z-index: 1;}
 .header h2{font-size: 1.25rem;margin-bottom: 0;}
+.searchSec {position: relative;}
+.searchSec input{padding: .75rem;padding-left: 2.5rem; border: none;}
+.searchSec i{position: absolute; top: 12px; left: 14px;}
+.collectionTable {background: #fff;}
+.collectionTable > thead >tr >th {font-weight: 500;}
+.collectionTable > thead > tr> th:nth-child(1){width: 50px; text-align: center;}
+.collectionTable > tbody> tr >td:nth-child(1){text-align: center;}

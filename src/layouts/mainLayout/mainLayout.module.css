@@ -1,0 +1,13 @@
+.mainLayoutWrapper{width: 100%; float: left; display: flex; background: #f4f7fc; min-height: 100vh;}
+.mainLayout{padding: 1.5rem; flex:1}
+.header, .topbar{display: flex; justify-content: space-between;margin-bottom: 1.75rem;}
+.header h1{font-size: 1.25rem; font-weight: 500;}
+:local(.right) :global(.searchSec){float: left;}
+:local(.topbar .right) input {float: right;margin-right: 1rem; max-width: 270px;}
+.basePath{color: #555;}
+.sideMenuWrapper{display: flex;}
+.sideMenu {height: 100vh; padding: 1rem .5rem;  background: #fff; width: 60px; float: left; display: flex; justify-content: space-between; align-items:center; flex-direction: column;}
+.sideMenu ul{padding: 0; margin-top: 3rem;}
+.sideMenu ul > li{list-style-type: none;margin-bottom: 2rem;}
+.sideMenu i{font-size: 1.5rem; cursor: pointer;}
+.navMenu{ background: #fff; height: 100vh; transition: 0.5s;}

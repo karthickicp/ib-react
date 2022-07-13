@@ -57,7 +57,7 @@ const Dashboard = () => {
         <Col xs={12}>
           <Row>
             <Col md={4} lg={3}>
-              <div className={styles.left}>
+              <div className="searchSec">
                 <i className="bi bi-search"></i>
                 <Form.Control
                   type="text"
