@@ -17,8 +17,11 @@ body {
 .table > :not(:first-child){border-top: none;}
 /* button styles */
 .Btn{padding: .75rem 1rem; border-radius: .25rem; border: 1px solid; font-size: 1rem; font-weight: 500;}
+.Btn.sm{padding: .5rem 1rem;}
+.Btn-outline{background: transparent;}
 .Btn-primary{background: #4c84ff; color: #fff;}
-
+.Btn-danger{background: #f22c2c;color: #fff;}
+.Btn-outline.primary{color: #20282b; border-color: #20282b; background: tr;}
 /* header */
 .header{background: #fff; padding: 1rem 1.5rem; display: flex; justify-content: space-between;align-items: center;position: fixed; top: 0; width: 100%; float: left;z-index: 1;}
 .header h2{font-size: 1.25rem;margin-bottom: 0;}
