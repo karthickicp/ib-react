@@ -2,7 +2,7 @@ import React, { useRef, useState } from "react";
 import Table from "react-bootstrap/Table";
 import Form from "react-bootstrap/Form";
 import styles from "../../layouts/mainLayout/mainLayout.module.css";
-import { useMemo } from "react";
+// import { useMemo } from "react";
 export const Collections = () => {
   const collectionData = [
     { name: "Json1", value: "{}" },
@@ -12,23 +12,26 @@ export const Collections = () => {
   const selectAllRef = useRef("");
   const [collections, setCollections] = useState(collectionData);
   const [selectedCollections, setSelectedCollections] = useState([]);
-  console.log(selectedCollections, "selected collection");
-  const isCollectionSelected = useMemo(() => {
-    if (selectedCollections && selectedCollections.length > 0) {
-      return (selectAllRef.current.indeterminate = true);
-    } else if (selectAllRef.current) {
-      return (
-        (selectAllRef.current.indeterminate = false),
-        (selectAllRef.current.checked = false)
-      );
-    }
-  }, [selectedCollections]);
+  // useMemo(() => {
+  //   if (selectedCollections && selectedCollections.length > 0) {
+  //     return (selectAllRef.current.indeterminate = true);
+  //   } else if (selectAllRef.current) {
+  //     return (
+  //       (selectAllRef.current.indeterminate = false),
+  //       (selectAllRef.current.checked = false)
+  //     );
+  //   }
+  // }, [selectedCollections]);
   const handleSelectCollection = (isChecked, collection) => {
     const filterSelectedCollection = selectedCollections.filter(
       (data) => data.name !== collection.name
     );
     if (isChecked) {
       setSelectedCollections((prev) => [...prev, collection]);
+      selectAllRef.current.indeterminate = true;
+    } else if (!isChecked && selectedCollections.length <= 1) {
+      setSelectedCollections(filterSelectedCollection);
+      selectAllRef.current.indeterminate = false;
     } else {
       setSelectedCollections(filterSelectedCollection);
     }
@@ -54,6 +57,8 @@ export const Collections = () => {
     });
     setCollections(remainingCollection);
     setSelectedCollections([]);
+    selectAllRef.current.indeterminate = false;
+    selectAllRef.current.checked = false;
   };
   const isCollectionChecked = (collection) => {
     return selectedCollections.some(
