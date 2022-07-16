@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import DashboardLayout from "../layouts/dashboardLayout/DashboardLayout";
 import Login from "../views/auth/Login";
 import Dashboard from "../views/dashboard/Dashboard";
-import { MainLayout } from "./../layouts/mainLayout/MainLayout";
-import { Collections } from "./../views/collections/Collections";
+import { MainLayout } from "../layouts/mainLayout/MainLayout";
+import { Collections } from "../views/collections/Collections";
 
 const Router = () => {
   //   const Routes = [{}
